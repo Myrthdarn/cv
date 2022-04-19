@@ -1,0 +1,102 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage[francais]{babel}
+% adjust the page margins
+\usepackage[margin=0.5cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Vincent}{Noel}
+%\title{}                               % optional, remove / comment the line if not wanted
+\address{}{Current country of residence: France}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+33~6~26~42~38~26}                   % optional, remove / comment the line if not wanted
+\title{CEP Underwriter/Actuary, fellow member of the French "Institut des actuaires"}
+\email{vincent.noel43@gmail.com}                               % optional, remove / comment the line if not wanted
+%\extrainfo{26 y.o.}
+%\photo[64pt][0.4pt]{photo_cv.png}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+
+\section{Professional experience}
+\cventry{2021-2022}{CEP Underwriter}{AXA Partners Holding}{Châtillon}{Consumer Electronics and Legal Protection Department}{\begin{itemize}
+    \item \textbf{Underwriting}: involved in every step of the UW process, from initial business assessment to validation in Group risk management committee.
+    \item \textbf{Portfolio Monitoring}: recovery of a €10m annual GWP loss-making program. Identifying key issues through claims analysis, devising a remediation plan (repricing \& product design), and proposing new products in order to reach profitability targets.
+    \item \textbf{Pricing Tools}: development and maintenance of the pricing tools used for tenders.
+    \end{itemize}}
+
+\cventry{2018-2021}{Actuarial analyst}{Groupama}{Nanterre}{Reinsurance Department}{\begin{itemize}
+    \item \textbf{Reinsurance pricing}: Motor, TPL (Construction, Business), Climate (drought, storms, hail \& floods), Crops.
+    \item \textbf{International}: actuarial/technical support for the greek and turkish subsidiaries, (earthquake and fire modelling), climate reinsurance modelling (crops, greenhouses) in Belgium and Netherlands.
+    \item \textbf{Storm modelling}: responsible for the coordination of modelling agencies (brokers, RMS, AIR), Cat model scoring, 48h post-event loss estimation for all french entities, actuarial/technical support for other departments.
+    \end{itemize}}
+
+\cventry{2017-2018}{Actuarial apprentice}{Groupama}{Nanterre}{Reinsurance Department}{\begin{itemize}
+    \item \textbf{Actuarial thesis}: development of a neural network to predict storms on Europe and analysis of the causal event for European storm clustering, with the purpose of better defining the storms hours clause in reinsurance contracts.
+    \item \textbf{Risk assessment (ORSA)} for the Forest insurance subsidiary.
+    \end{itemize}}
+\cventry{Summer 2017}{Actuarial internship}{PricewaterhouseCoopers}{Neuilly-sur-Seine}{}{\begin{itemize}
+    \item \textbf{Longevity}: modelling of the mortality at very old ages and co-writing of an article which was presented at the International Congress of Actuaries 2018.
+    \item \textbf{Market analysis}: listing of the main european infrastructure equity funds.
+    \end{itemize}}
+\cventry{Summer 2016}{Internship}{Laboratoire de Physique Subatomique et de Cosmologie}{Grenoble}{}{\begin{itemize}
+    \item Python implementation of the calibration program for the camera in the LSST (Large Synoptic Survey Telescope).
+\end{itemize}}
+
+
+\subsection{Tools}
+\cventry{}{Analysis and data processing}{Excel, SAS, R, Python}{}{}{}
+\cventry{}{Data scraping}{RSelenium, rvest}{}{}{}
+
+
+\section{Education}
+\cventry{2015--2018}{ISUP}{Institut de Statistique de l'Université Pierre et Marie Curie}{Paris}{}{Major in Actuarial Science.}  % arguments 3 to 6 can be left empty
+%\cventry{2013--2015}{Classe préparatoire}{Lycée Godefroy de Bouillon}{Clermont-Ferrand}{\textit{MP}}{}
+%\cventry{2012--2013}{Classe préparatoire}{Lycée Louis-le-Grand}{Paris}{\textit{MPSI}}{}
+
+
+\section{Languages}
+\cventry{English}{Fluent, C2 level}{EFSET 74, TOEIC 990/990}{}{}{}
+\cventry{German}{Intermediate, B1 level}{2 months exchange program in Frankfurt/Oder}{}{}{}
+
+\section{Interests}
+\cventry{Associations}{\normalfont{President of the ISUP Junior, 2016-2017}}{Business association of the ISUP}{}{}{Management of a 25-person team, monitoring several missions.}
+\cvitem{Sport}{Running (endurance)}
+\cvitem{Other}{Piano, computer aided music (Sonar/Kontakt), game development (Unreal Engine 4).}
+\end{document}
+
+
+%% end of file `template.tex'.
